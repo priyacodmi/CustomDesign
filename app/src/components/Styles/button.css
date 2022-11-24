@@ -6,16 +6,18 @@
 }
 
 .button{
-  font-size: 22px;
+  font-size: 20px;
   background-color: teal;
   color: white;
   border-radius: 5px;
   border: none;
-  padding: 8px;
+  padding: 5px;
   margin: 2px;
   cursor: pointer;
   letter-spacing: 1px;
   font-weight: bold;
+  width: 290px;
+  
 }
 
 .button:hover{
