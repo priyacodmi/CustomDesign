@@ -1,21 +1,14 @@
 import React from "react";
+import './Styles/button.css';
 
-export const Button=({props})=>{
+export const Button=({children})=>{
+  
   return(
     <>
-      <button type={props}></button>
+      <button className="button">
+        {children}</button>
     </>
   )
 }
 
 
-
-import React from "react";
-
-export const Button=()=>{
-  return(
-    <>
-      <button></button>
-    </>
-  )
-}

@@ -1,12 +1,11 @@
 
 import './App.css';
-import { Button } from './components/CustomButton';
+import { SignUp } from './components/SignUp';
 
 function App() {
   return (
     <div className="App">
-      Hello World!
-      <Button>CustomButton</Button>
+      <SignUp/>
     </div>
   );
 }

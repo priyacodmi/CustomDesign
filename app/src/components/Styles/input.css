@@ -1,0 +1,18 @@
+.input{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+input{
+  color: teal;
+  border: 1px solid teal;
+}
+
+input:focus {
+  padding: 6px;
+  border: 1px solid rgb(66, 151, 185) transparent; 
+  outline: none;
+  background-color: hsl(144, 56%, 98%);
+}
