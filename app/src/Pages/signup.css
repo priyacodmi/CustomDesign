@@ -21,3 +21,28 @@
   font-size: 20px;
   color: teal;
 }
+
+.container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding: 60px;
+}
+
+.container h3{
+  font-size: 25px;
+  color: teal;
+  margin: 10px;
+}
+
+.container h4{
+  font-size: 20px;
+  color: blue;
+  margin: 10px;
+}
+
+.container img{
+  width: 100%;
+  object-fit: contain;
+}

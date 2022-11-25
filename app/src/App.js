@@ -23,9 +23,6 @@ function App() {
           <Dashboard/>
         </RequiredAuth>
         }/>
-          
-        
-        {/* <Route path='/admin' element={<Dashboard/>}/> */}
       </Routes>
       <Footer/>
     </div>
