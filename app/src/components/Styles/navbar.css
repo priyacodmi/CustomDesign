@@ -1,0 +1,37 @@
+.mainContainer{
+  width: 100%;
+  background-color: teal;
+  margin: auto;
+  height: 50px;
+  padding: 8px;
+  position: sticky;
+  top: 0;
+}
+
+.navContainer{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: auto;
+  position: sticky;
+  background-color: teal;
+  top: 0;
+}
+
+.navContainer .link{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  background-color: teal;
+}
+
+.navContainer li{
+  list-style: none;
+}
+
+.appLogo{
+  background-color: teal;
+}

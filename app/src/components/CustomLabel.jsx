@@ -1,9 +1,9 @@
 import React from "react";
 
-export const FormLabel=({children})=>{
+export const FormLabel=({children, className})=>{
     return(
       <>
-        <p>{children}</p>
+        <p className={className}>{children}</p>
       </>
     )
 }

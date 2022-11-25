@@ -1,0 +1,23 @@
+.signContainer{
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.signContainer h3{
+  font-size: 30px;
+  color: teal;
+  margin-bottom: 20px;
+}
+
+.formContainer{
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.formContainer .formLabel{
+  font-size: 20px;
+  color: teal;
+}

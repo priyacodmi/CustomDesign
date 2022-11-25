@@ -3,12 +3,15 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: beige;
 }
 
 .button{
   font-size: 20px;
   background-color: teal;
   color: white;
+  width: 90%;
+  margin: auto;
   border-radius: 5px;
   border: none;
   padding: 5px;
@@ -16,8 +19,6 @@
   cursor: pointer;
   letter-spacing: 1px;
   font-weight: bold;
-  width: 290px;
-  
 }
 
 .button:hover{

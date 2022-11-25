@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Input } from "./CustomInput";
-import { Button } from "./CustomButton";
-import { Form } from "./CustomForm";
-import { FormLabel } from "./CustomLabel";
+import { Input } from "../components/CustomInput";
+import { Button } from "../components/CustomButton";
+import { Form } from "../components/CustomForm";
+import { FormLabel } from "../components/CustomLabel";
+import "./signup.css";
 
 
 export const SignUp = () => {
@@ -35,8 +36,8 @@ export const SignUp = () => {
     if(!name){
       setNameErr("User name is required!");
     }
-    else if(name.length<8 || name.length>20){
-      setNameErr("User name must be 8 to 20 characters long!");
+    else if(name.length<3 || name.length>20){
+      setNameErr("User name must be 3 to 20 characters long!");
     }
     else if(!name.match(nameRegex)){
       setNameErr("Please enter a valid name, name should contains only alphabate characters!");
@@ -66,12 +67,12 @@ export const SignUp = () => {
 
     //password validation
   const passValidation=()=>{
-    const passRegex="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$";
+    const passRegex="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{6,10}$";
     if(!password){
       setPassErr("Please fill your password!");
     }
-    else if(!user.password.match(passRegex)){
-      setPassErr("Password must contain one specail character, one lowercse character, one upercase character, and it should be of 8-10 characters long!");
+    else if(!password.match(passRegex)){
+      setPassErr("Password must contain one special character, one lowercse character, one upercase character, and it should be of 6-10 characters long!");
     }
     else{
       setPassErr("");
@@ -111,23 +112,23 @@ export const SignUp = () => {
 
 
   return (
-    <>
+    <div className="signContainer">
       <h3>Welcome To SignUp Page &#x1F60D;</h3>
-      <Form onSubmit={handleSubmit}>
-        <FormLabel>User Name :</FormLabel>
+      <Form onSubmit={handleSubmit} className="formContainer">
+        <FormLabel className="formLabel">User Name :</FormLabel>
         <Input type="text" name="name" value={user.name} onChange={handleChange} onKeyUp={nameValidation} onBlur={nameValidation} placeholder="Enter your name...*" />
         {nameErr && <p style={{color:"red"}}>{nameErr}</p>}
-        <FormLabel>Email :</FormLabel>
+        <FormLabel className="formLabel">Email :</FormLabel>
         <Input type="email" name="email" value={user.email} onChange={handleChange} onKeyUp={emailValidation} onBlur={emailValidation} placeholder="Enter your email...*" />
         {emailErr && <p style={{color:"red"}}>{emailErr}</p>}
-        <FormLabel>Password :</FormLabel>
+        <FormLabel className="formLabel">Password :</FormLabel>
         <Input type="password" name="password" value={user.password} onChange={handleChange} onKeyUp={passValidation} onBlur={passValidation} placeholder="Enter your password...*" />
         {passErr && <p style={{color:"red"}}>{passErr}</p>}
-        <FormLabel>Confirm Password :</FormLabel>
-        <Input type="password" name="password" value={user.confirmPassword} onChange={handleChange} onKeyUp={confPassValidation} onBlur={confPassValidation} placeholder="Confirm your password...*" />
+        <FormLabel className="formLabel">Confirm Password :</FormLabel>
+        <Input type="password" name="confirmPassword" value={user.confirmPassword} onChange={handleChange} onKeyUp={confPassValidation} onBlur={confPassValidation} placeholder="Confirm your password...*" />
         {conPassErr && <p style={{color:"red"}}>{conPassErr}</p>}
         <Button>Sign Up</Button>
       </Form>
-    </>
+    </div>
   )
 }
