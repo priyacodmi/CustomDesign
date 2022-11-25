@@ -82,7 +82,7 @@ export const SignIn = () => {
       <h3>Welcome To SignIn Page &#x1F60D;</h3>
       <Form onSubmit={handleSubmit} className="formContainer">
         <FormLabel className="formLabel">Email :</FormLabel>
-        <Input type="email" name="email" value={user.email} onChange={handleChange} onKeyUp={emailValidation} onBlur={emailValidation} placeholder="Enter your email...*" />
+        <Input type="email" name="email" value={user.email}  onChange={handleChange} onKeyUp={emailValidation} onBlur={emailValidation} placeholder="Enter your email...*" />
         {emailErr && <p style={{color:"red"}}>{emailErr}</p>}
         <FormLabel className="formLabel">Password :</FormLabel>
         <Input type="password" name="password" value={user.password} onChange={handleChange} onKeyUp={passValidation} onBlur={passValidation} placeholder="Enter your password...*" />
