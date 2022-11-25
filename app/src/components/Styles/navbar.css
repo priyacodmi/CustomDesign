@@ -1,4 +1,4 @@
-.mainContainer{
+.mainContainer {
   width: 100%;
   background-color: teal;
   margin: auto;
@@ -8,7 +8,7 @@
   top: 0;
 }
 
-.navContainer{
+.navContainer {
   width: 80%;
   margin: auto;
   display: flex;
@@ -21,17 +21,28 @@
   top: 0;
 }
 
-.navContainer .link{
+.navContainer .link {
   text-decoration: none;
   color: white;
   font-size: 22px;
   background-color: teal;
 }
 
-.navContainer li{
+.navContainer li {
   list-style: none;
 }
 
-.appLogo{
+.appLogo {
   background-color: teal;
+}
+
+.footer {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: teal;
+  position: fixed;
+  bottom: 50px;
+  left: 0px;
+  right: 0px;
 }

@@ -4,6 +4,9 @@ import { Button } from "../components/CustomButton";
 import { Form } from "../components/CustomForm";
 import { FormLabel } from "../components/CustomLabel";
 import "./signup.css";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 
 export const SignIn = () => {
@@ -14,6 +17,8 @@ export const SignIn = () => {
   const [user,setUser]=useState(initialState);
   const [emailErr,setEmailErr]=useState("");
   const [passErr,setPassErr]=useState("");
+  const { handleAuth } = useContext(AuthContext);
+  const navigate=useNavigate();
 
 
   const handleChange=(e)=>{
@@ -65,7 +70,10 @@ export const SignIn = () => {
     passValidation();
     if(email!=="" && password!==""){
       console.log("user",user);
+      localStorage.setItem("user",JSON.stringify(user));
     }
+    handleAuth(true);
+    navigate("/admin", { replace:true});
   }
 
 
