@@ -1,0 +1,64 @@
+.inputContainer{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border: 1px solid gray;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.inputContainer>select{
+  width: 35%;
+  padding: 5px;
+  font-size: 16px;
+  color: rgb(68, 105, 156);
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.inputContainer>button{
+  padding: 5px;
+  font-size: 19px;
+  background-color: rgb(94, 149, 237);
+  color: white;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.inputContainer>button:hover{
+  background-color: rgb(93, 93, 249);
+}
+
+.mainContainer{
+  width: 90%;
+  margin: auto;
+}
+
+.propertyContainer{
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+.card{
+  box-shadow: 10px 10px 5px #aaaaaa;
+  padding: 5px;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+.card .imageDiv>img{
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
