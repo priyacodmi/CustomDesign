@@ -127,7 +127,7 @@ export const SignUp = () => {
         <FormLabel className="formLabel">Confirm Password :</FormLabel>
         <Input type="password" name="confirmPassword" value={user.confirmPassword} onChange={handleChange} onKeyUp={confPassValidation} onBlur={confPassValidation} placeholder="Confirm your password...*" />
         {conPassErr && <p style={{color:"red"}}>{conPassErr}</p>}
-        <Button>Sign Up</Button>
+        <Button type="submit">Sign Up</Button>
       </Form>
     </div>
   )

@@ -28,6 +28,10 @@
   background-color: teal;
 }
 
+.navContainer .link:hover{
+  color: rgb(78, 240, 186);
+}
+
 .navContainer li {
   list-style: none;
 }

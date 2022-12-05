@@ -7,7 +7,7 @@
 }
 
 .button{
-  font-size: 20px;
+  font-size: 18px;
   background-color: teal;
   color: white;
   width: 90%;
@@ -24,4 +24,10 @@
 .button:hover{
   color: rgb(38, 126, 38);
   background-color: rgb(104, 188, 188);
+}
+
+.dropdown select{
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
 }

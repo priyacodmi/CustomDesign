@@ -1,0 +1,22 @@
+.table{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+.tableHead{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.tableBody{
+  font-size: 16px;
+  color: rgb(76, 75, 75);
+}
+
+.tableRow{
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}

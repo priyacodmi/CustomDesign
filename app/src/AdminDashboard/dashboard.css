@@ -1,0 +1,11 @@
+.tableContainer{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: bisque;
+  align-items: center;
+  display: block;
+  height: 70vh;
+  justify-content: center;
+  margin-top: 50px;
+}

@@ -15,7 +15,7 @@ export const Navbar = () => {
     <div className="mainContainer">
       <ul className="navContainer">
         <li>
-          <Link className="link"><h3 className="appLogo">MyApp</h3></Link>
+          <Link className="link" to="/"><h3 className="appLogo">MyApp</h3></Link>
         </li>
         <li>
           <Link className="link" to="/">Home</Link>

@@ -87,7 +87,7 @@ export const SignIn = () => {
         <FormLabel className="formLabel">Password :</FormLabel>
         <Input type="password" name="password" value={user.password} onChange={handleChange} onKeyUp={passValidation} onBlur={passValidation} placeholder="Enter your password...*" />
         {passErr && <p style={{color:"red"}}>{passErr}</p>}
-        <Button>Sign In</Button>
+        <Button type="submit">Sign In</Button>
       </Form>
     </div>
   )
