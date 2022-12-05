@@ -21,14 +21,15 @@ export const Navbar = () => {
           <Link className="link" to="/">Home</Link>
         </li>
         <li>
-          <Link className="link" to="/login" onClick={logOut}>{isAuthorized?"SignOut":"SignIn"}</Link>
+          <Link className="link" to="/admin">Admin</Link>
+        </li>
+        <li>
+          <Link className="link" to="/login" onClick={logOut}>{isAuthorized?"LogOut":"SignIn"}</Link>
         </li>
         <li>
           <Link className="link" to="/register">{isAuthorized?null:"SignUp"}</Link>
         </li>
-        <li>
-          <Link className="link" to="/admin">Admin</Link>
-        </li>
+        
       </ul>   
     </div>
   )
